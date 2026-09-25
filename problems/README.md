@@ -1160,3 +1160,5 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-001020 | [For a polynomial whose zeros all lie on the unit circle, is there a uniformly bounded-length path in the specified modulus region?](catalog-1001-1022.md#JSP-001020) | Solved | No | No | Unavailable | Unavailable |
 | JSP-001021 | [How large a transitive subtournament must every tournament of prescribed order contain?](catalog-1001-1022.md#JSP-001021) | Solved | No | No | Unavailable | Unavailable |
 | JSP-001022 | [Must every integer set of positive lower logarithmic density contain an infinite divisibility chain, with controlled growth?](catalog-1001-1022.md#JSP-001022) | Solved | No | No | Unavailable | Unavailable |
+| JSP-001031 | [Scott domain CPOs and Knaster-Tarski fixed-point convergence](catalog-1001-1022.md#JSP-001031) | Solved | Yes | Yes | Unavailable | Unavailable |
+
