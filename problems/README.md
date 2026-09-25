@@ -149,7 +149,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000054 | [cluster primes](catalog-0001-0100.md#JSP-000054) | Open | No | No | Unavailable | Unavailable |
 | JSP-000055 | [practical numbers](catalog-0001-0100.md#JSP-000055) | Open | No | No | Unavailable | Unavailable |
 | JSP-000056 | [Is the union of n edge-disjoint complete graphs, each on n vertices, always properly colorable with n colors?](catalog-0001-0100.md#JSP-000056) | Open | No | No | Unavailable | Unavailable |
-| JSP-000057 | [sunflower conjecture](catalog-0001-0100.md#JSP-000057) | Open | No | No | Unavailable | Unavailable |
+| JSP-000057 | [sunflower conjecture](catalog-0001-0100.md#JSP-000057) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000058 | [Can every triangle-free graph on 5k vertices be made bipartite by deleting at most k² edges?](catalog-0001-0100.md#JSP-000058) | Open | No | No | Unavailable | Unavailable |
 | JSP-000059 | [Do the integers remaining after successively avoiding the prescribed congruence classes necessarily have logarithmic density?](catalog-0001-0100.md#JSP-000059) | Open | No | No | Unavailable | Unavailable |
 | JSP-000060 | [Can congruence classes cover almost all integers when their moduli are restricted to a prescribed range?](catalog-0001-0100.md#JSP-000060) | Solved | No | No | Unavailable | Unavailable |
