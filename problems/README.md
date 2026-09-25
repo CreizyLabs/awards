@@ -241,7 +241,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000141 | [Can a product of consecutive positive integers have every prime factor occurring with exponent at least two?](catalog-0101-0200.md#JSP-000141) | Open | No | No | Unavailable | Unavailable |
 | JSP-000142 | [How fast does the interval length forcing a monochromatic arithmetic progression of prescribed length in every two-coloring grow?](catalog-0101-0200.md#JSP-000142) | Open | No | No | Unavailable | Unavailable |
 | JSP-000143 | [Are there arbitrarily long arithmetic progressions whose terms are consecutive primes in the full prime sequence?](catalog-0101-0200.md#JSP-000143) | Open | No | No | Unavailable | Unavailable |
-| JSP-000144 | [How large can a subset of a finite integer interval be if it contains no arithmetic progression of a specified length?](catalog-0101-0200.md#JSP-000144) | Open | No | No | Unavailable | Unavailable |
+| JSP-000144 | [How large can a subset of a finite integer interval be if it contains no arithmetic progression of a specified length?](catalog-0101-0200.md#JSP-000144) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000145 | [How dense can a set of real numbers be if distinct elements avoid prescribed neighborhoods of one another's integer multiples?](catalog-0101-0200.md#JSP-000145) | Open | No | No | Unavailable | Unavailable |
 | JSP-000146 | [Determine the average and growth of fixed powers of gaps between consecutive squarefree numbers.](catalog-0101-0200.md#JSP-000146) | Open | No | No | Unavailable | Unavailable |
 | JSP-000147 | [How many edges can a graph have while excluding a given bipartite graph of bounded degeneracy?](catalog-0101-0200.md#JSP-000147) | Solved | Yes | Yes | Unclaimed | Unclaimed |
