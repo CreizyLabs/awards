@@ -676,7 +676,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000556 | [When does the small-prime part of a binomial coefficient exceed the square of its upper parameter?](catalog-0501-0600.md#JSP-000556) | Open | No | No | Unavailable | Unavailable |
 | JSP-000557 | [What asymptotic formulas describe the number of distinct prime factors of binomial coefficients as their parameters vary?](catalog-0501-0600.md#JSP-000557) | Open | No | No | Unavailable | Unavailable |
 | JSP-000558 | [Can every integer at least two be a ratio of products of two disjoint equal-length positive-integer intervals, each of length at least two?](catalog-0501-0600.md#JSP-000558) | Open | No | No | Unavailable | Unavailable |
-| JSP-000559 | [How long a consecutive-integer interval can be covered by choosing one residue class for each small prime?](catalog-0501-0600.md#JSP-000559) | Open | No | No | Unavailable | Unavailable |
+| JSP-000559 | [How long a consecutive-integer interval can be covered by choosing one residue class for each small prime?](catalog-0501-0600.md#JSP-000559) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000560 | [Using only large prime moduli, how wide a prime range is needed to cover an initial integer interval?](catalog-0501-0600.md#JSP-000560) | Open | No | No | Unavailable | Unavailable |
 | JSP-000561 | [Can one residue class per prescribed prime be chosen to cover each integer in a given interval at least twice?](catalog-0501-0600.md#JSP-000561) | Open | No | No | Unavailable | Unavailable |
 | JSP-000562 | [Is the density distribution of the prime factor at a prescribed position among ordered distinct prime factors unimodal?](catalog-0501-0600.md#JSP-000562) | Solved | No | No | Unavailable | Unavailable |
