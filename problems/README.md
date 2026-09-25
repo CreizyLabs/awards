@@ -156,7 +156,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000061 | [If every sufficiently large integer is a sum of two elements of a set, must the numbers of such representations be unbounded?](catalog-0001-0100.md#JSP-000061) | Open | No | No | Unavailable | Unavailable |
 | JSP-000062 | [How large can a set with distinct two-element sums in a finite integer interval be, and how large is the error from the leading term?](catalog-0001-0100.md#JSP-000062) | Open | No | No | Unavailable | Unavailable |
 | JSP-000063 | [How sparse can an additive complement of the primes be if every sufficiently large integer must be a prime plus an element of that complement?](catalog-0001-0100.md#JSP-000063) | Open | No | No | Unavailable | Unavailable |
-| JSP-000064 | [What is the smallest possible size of an additive complement of the squares that represents every sufficiently large integer?](catalog-0001-0100.md#JSP-000064) | Open | No | No | Unavailable | Unavailable |
+| JSP-000064 | [What is the smallest possible size of an additive complement of the squares that represents every sufficiently large integer?](catalog-0001-0100.md#JSP-000064) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000065 | [minimum overlap problem](catalog-0001-0100.md#JSP-000065) | Open | No | No | Unavailable | Unavailable |
 | JSP-000066 | [How much can adding a set that is not an additive basis increase another set's Schnirelmann density?](catalog-0001-0100.md#JSP-000066) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000067 | [Can an infinite positive-integer set have distinct two-element sums and nearly square-root growth in arbitrarily large intervals?](catalog-0001-0100.md#JSP-000067) | Open | No | No | Unavailable | Unavailable |
