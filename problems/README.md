@@ -174,7 +174,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000079 | [How many quadrilaterals are forced when a graph's edge count exceeds the threshold for containing one?](catalog-0001-0100.md#JSP-000079) | Open | No | No | Unavailable | Unavailable |
 | JSP-000080 | [Must a graph excluding a prescribed induced subgraph contain a sufficiently large clique or independent set?](catalog-0001-0100.md#JSP-000080) | Open | No | No | Unavailable | Unavailable |
 | JSP-000081 | [Must two graphs of uncountable chromatic number have a common subgraph of large chromatic number?](catalog-0001-0100.md#JSP-000081) | Open | No | No | Unavailable | Unavailable |
-| JSP-000082 | [Does every graph of minimum degree at least three contain a cycle whose length is a power of 2?](catalog-0001-0100.md#JSP-000082) | Open | No | No | Unavailable | Unavailable |
+| JSP-000082 | [Does every graph of minimum degree at least three contain a cycle whose length is a power of 2?](catalog-0001-0100.md#JSP-000082) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000083 | [What lower bounds hold for the sum of reciprocals of a graph's distinct cycle lengths, and how does this sum reflect its structure?](catalog-0001-0100.md#JSP-000083) | Open | No | No | Unavailable | Unavailable |
 | JSP-000084 | [Can an integer set have a number of two-element sum representations growing asymptotically like a logarithm?](catalog-0001-0100.md#JSP-000084) | Open | No | No | Unavailable | Unavailable |
 | JSP-000085 | [Unbounded discrepancy on homogeneous arithmetic progressions](catalog-0001-0100.md#JSP-000085) | Solved | No | No | Unavailable | Unavailable |
