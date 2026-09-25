@@ -139,7 +139,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000044 | [Must a set of positive integers whose reciprocals have divergent sum contain arithmetic progressions of every finite length?](catalog-0001-0100.md#JSP-000044) | Open | No | No | Unavailable | Unavailable |
 | JSP-000045 | [How large can gaps between consecutive primes be? Are infinitely many gaps larger than the proposed lower bound?](catalog-0001-0100.md#JSP-000045) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000046 | [Can consecutive prime gaps, divided by the logarithm of the prime index, approach every prescribed nonnegative real number along a subsequence?](catalog-0001-0100.md#JSP-000046) | Open | No | No | Unavailable | Unavailable |
-| JSP-000047 | [Can finitely many congruence classes with distinct odd moduli cover all integers?](catalog-0001-0100.md#JSP-000047) | Open | No | No | Unavailable | Unavailable |
+| JSP-000047 | [Can finitely many congruence classes with distinct odd moduli cover all integers?](catalog-0001-0100.md#JSP-000047) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000048 | [Do the positive odd integers not expressible as a prime plus two nonnegative powers of 2 have positive upper density?](catalog-0001-0100.md#JSP-000048) | Open | No | No | Unavailable | Unavailable |
 | JSP-000049 | [Is there a fixed bound on the number of powers of 2 needed, together with one prime, to represent every sufficiently large integer?](catalog-0001-0100.md#JSP-000049) | Open | No | No | Unavailable | Unavailable |
 | JSP-000050 | [Is every sufficiently large odd integer the sum of a squarefree positive integer and a power of 2?](catalog-0001-0100.md#JSP-000050) | Open | No | No | Unavailable | Unavailable |
