@@ -1133,7 +1133,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000993 | [With bounded moduli, how many irredundant distinct covering systems exist?](catalog-0901-1000.md#JSP-000993) | Open | No | No | Unavailable | Unavailable |
 | JSP-000994 | [How many modulus sets support irreducible coverings, and what size restrictions must they satisfy?](catalog-0901-1000.md#JSP-000994) | Open | No | No | Unavailable | Unavailable |
 | JSP-000995 | [How large can the reciprocal sum of large moduli be when their residue classes are pairwise disjoint?](catalog-0901-1000.md#JSP-000995) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000996 | [Can the square-root density restriction for infinite Sidon sets be strengthened by the predicted logarithmic correction?](catalog-0901-1000.md#JSP-000996) | Open | No | No | Unavailable | Unavailable |
+| JSP-000996 | [Can the square-root density restriction for infinite Sidon sets be strengthened by the predicted logarithmic correction?](catalog-0901-1000.md#JSP-000996) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000997 | [Can the mean square of representation counts in an additive basis remain bounded?](catalog-0901-1000.md#JSP-000997) | Open | No | No | Unavailable | Unavailable |
 | JSP-000998 | [How large a density can integers have on which additive representation counts equal a prescribed positive monotone function?](catalog-0901-1000.md#JSP-000998) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000999 | [How fast must an integer set grow if each positive integer has exactly one representation as a difference of two of its elements?](catalog-0901-1000.md#JSP-000999) | Open | No | No | Unavailable | Unavailable |
