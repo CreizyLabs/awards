@@ -623,7 +623,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000503 | [How many vertex subsets of a high-degree regular graph are exactly the vertex sets of cycles?](catalog-0501-0600.md#JSP-000503) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000504 | [Must the specified set mapping on a set of singular cardinality have an infinite free set?](catalog-0501-0600.md#JSP-000504) | Open | No | No | Unavailable | Unavailable |
 | JSP-000505 | [How small a starting subset suffices to cover the whole set by applying the given mapping to it and its small subsets?](catalog-0501-0600.md#JSP-000505) | Open | No | No | Unavailable | Unavailable |
-| JSP-000506 | [In a random graph, how much smaller than the chromatic number is the minimum number of parts in a partition into cliques and independent sets?](catalog-0501-0600.md#JSP-000506) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000506 | [In a random graph, how much smaller than the chromatic number is the minimum number of parts in a partition into cliques and independent sets?](catalog-0501-0600.md#JSP-000506) | Solved | Yes | Yes | Unavailable | Unavailable |
 | JSP-000507 | [What is the largest girth of a graph with prescribed order and chromatic number, including its asymptotic constant?](catalog-0501-0600.md#JSP-000507) | Open | No | No | Unavailable | Unavailable |
 | JSP-000508 | [What is the largest asymptotic ratio of chromatic number to clique number at the prescribed graph size?](catalog-0501-0600.md#JSP-000508) | Open | No | No | Unavailable | Unavailable |
 | JSP-000509 | [Partitioning graphs with prescribed chromatic bounds](catalog-0501-0600.md#JSP-000509) | Open | No | No | Unavailable | Unavailable |
