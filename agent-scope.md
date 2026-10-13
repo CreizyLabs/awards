@@ -1,8 +1,7 @@
 # MathDB agent: claim handoff and notification contract
 
 Rules version: **mathdb-v1**. Applies only to the approved
-[49-problem pilot](problems/mathdb-pilot.md). Source:
-[October 8, 2026 cooperation process](https://docs.google.com/document/d/12S_ofD1aj5vqoh7tSiedUjnnIcCflKpvifaOQ9fIuUM/edit).
+[49-problem pilot](problems/mathdb-pilot.md).
 The [participant process](docs/award-process-mathdb.md) defines qualification,
 public review, identity confirmation and payment. This is an integration contract,
 not a running agent or evidence that an account, event API or mail service is live.

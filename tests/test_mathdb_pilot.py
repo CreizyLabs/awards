@@ -38,7 +38,7 @@ class PilotTests(unittest.TestCase):
 
     def test_initial_cohort_and_deduplication(self):
         problems = self.manifest["problems"]
-        # Preserve the initial selection while permitting future approved expansion.
+        # Preserve the initial cohort while permitting future approved expansion.
         initial_existing = {f"JSP-{i:06d}" for i in
                             (1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 13, 14, 15,
                              16, 21, 24, 25, 28, 29, 30, 37)}
@@ -48,7 +48,6 @@ class PilotTests(unittest.TestCase):
             {p["jsp"] for p in problems}))
         bombieri = [p for p in problems if "Bombieri" in p["title"]]
         self.assertEqual(len(bombieri), 1)
-        self.assertEqual(bombieri[0]["selection_lines"], [30, 50])
 
     def test_duplicate_jsp_and_mapping_are_rejected(self):
         for field in ("jsp", "mathdb"):

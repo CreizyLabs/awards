@@ -13,7 +13,6 @@ activation is announced and the official MathDB account is configured. The
 [pilot page](../problems/mathdb-pilot.md) records rollout and any unresolved scope;
 resolve those questions before automatic handoff for the affected problem.
 
-This version follows the [MathDB cooperation process, updated October 8, 2026](https://docs.google.com/document/d/12S_ofD1aj5vqoh7tSiedUjnnIcCflKpvifaOQ9fIuUM/edit).
 Problem levels and estimated rewards are not recorded in this repository.
 
 ## Contributions and conditions

@@ -81,6 +81,10 @@ list or add problem levels/reward estimates. Preserve existing JSP anchors and
 legacy records. The added problems extend the last volume through JSP-001050;
 its original filename is retained so existing external links keep working.
 
+Store public identifiers, catalog titles, mathematical scope and public evidence
+in the register. Keep names, original wording and line numbers of internal working
+materials outside this repository.
+
 Use `confirmed` only after statement correspondence is checked. Keep `pending`
 for an unresolved formulation or contradictory page statement; both block automatic
 handoff. If no complete matching page is located, leave the mapping ID, URL, title
