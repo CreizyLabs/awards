@@ -27,6 +27,13 @@ JSP identifiers are catalog references. They do not establish original authorshi
 
 ## Coverage and award status
 
+The [49-problem MathDB pilot](../problems/mathdb-pilot.md) adds 28 selection
+problems while retaining 21 existing JSP records. It uses the
+[new MathDB process](award-process-mathdb.md), with category-specific qualification
+and claim records. A MathDB mapping identifies the problem; it does not verify a
+solution or establish entitlement. The shared legacy eligibility convention below
+continues for problems outside the pilot.
+
 The catalog covers areas including number theory, combinatorics, graph theory, analysis, geometry, and algebra. The index and detail tables use **Current status** with **Open** or **Solved**. Partial results and incomplete Lean formalizations are not recorded; problems without a complete solution remain **Open**. Solved entries retain complete-solution evidence and contributor credits, with mathematical solver credits included in the **Current status** field.
 
 The catalog includes all seven Millennium Prize Problems (JSP-000001 through JSP-000007): the Riemann hypothesis, P versus NP, the Birch–Swinnerton-Dyer conjecture, the Hodge conjecture, Navier–Stokes existence and smoothness, Yang–Mills existence and mass gap, and the Poincaré conjecture.

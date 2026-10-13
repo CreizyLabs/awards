@@ -1,5 +1,12 @@
 # Public candidates
 
+For [MathDB pilot problems](../problems/mathdb-pilot.md), use the
+[new category-specific process](../docs/award-process-mathdb.md#4-public-review-for-each-category)
+and the [pilot rows below](#mathdb-pilot-candidates). Solution may enter public
+review before complete Lean payment evidence exists; the agent claim does not
+itself publish a candidate. The legacy prerequisites in the following paragraphs
+apply only to legacy records. Existing review dates and records are retained.
+
 The [register below](#candidate-register) is the public notice table, maintained
 by administrators after any required participant PR merges. Each contribution type's
 14-day review starts when its candidate is added for public notice, once the
@@ -42,3 +49,30 @@ remove its active candidate and review dates and retain the history. If no valid
 formalization remains, retain the solver application without an active clock.
 Detailed identity checks, payment/delivery information and correspondence stay
 out of this public register.
+
+### MathDB pilot candidates
+
+Administrators add one row per accepted category and actual claimant. Use
+`mathdb-v1`, the stable claimant's public identifier, confirmed MathDB problem,
+claim issue, fixed material and technical/committee evidence, and explicit UTC
+start/end 14 full days apart. Category shares and formal reward decisions are
+explained in the claim; this register contains no levels or estimates. Track
+Solution's complete Lean verification/adoption as a payment condition, separately
+from public review. Exposition follows its committee decision. Identity may be
+pending during notice but is required before announcement.
+
+No MathDB pilot candidates have been published yet.
+
+| Problem ID | Category | Public claimant | Rules version | MathDB problem | Claim issue | Fixed material and review/selection evidence | Review start (UTC) | Scheduled end (UTC) | Outstanding condition / status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+Only administrators publish or amend these rows. Link holds, disputes and team
+decisions; preserve unchanged notice dates during migration. A substantive
+recipient/version replacement restarts only the affected category after review.
+When awarded, retain completed dates and links in the award register and remove
+the active candidate row; do not duplicate active candidate and award records.
+
+Use category `Solution`, `Lean` or `Exposition`. After updating these rows, run
+`python3 scripts/mathdb_pilot.py build` and commit the generated index/pilot page.
+Only the corresponding category's public-registration state changes; opening an
+agent claim or passing technical/content review alone does not create a row here.

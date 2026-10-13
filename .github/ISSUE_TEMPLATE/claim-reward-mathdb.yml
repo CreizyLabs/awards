@@ -1,0 +1,80 @@
+name: Claim Reward (MathDB pilot handoff)
+description: Official agent handoff for an approved MathDB pilot problem; the contributor remains the claimant.
+title: "[Claim Reward] JSP-XXXXXX — categories — public claimant"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For the [49-problem MathDB pilot](https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.md), follow [mathdb-v1](https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md). Other problems use the legacy claim form. The official agent hands off materials; the actual contributor remains the claimant. Contributors respond to the existing claim rather than create a duplicate. No merged proof PR is required.
+
+        This form does not authenticate an official bot, sign for the claimant or approve an award. Maintainers verify the configured official actor, activation, confirmed mapping and evidence. Only hand off categories that pass technical and reward-condition checks. Solution/Lean require original public dates after 2026-01-01 and earliest-valid-contributor evidence. Exposition requires committee selection of the first satisfactory contributor. Solution may start its claim/public review while complete Lean payment evidence is pending.
+
+        Do not publish private email, identity, payment or delivery information. Personal response and identity start pending; the agent cannot sign declarations or infer confirmation from email sending. Applicants reply privately to thejustinsunprize@hejustinsun.com and later confirm the team's determined categories, reward and attribution.
+  - type: textarea
+    id: handoff
+    attributes:
+      label: Agent handoff and rule version
+      description: Public authenticated actor identity, opaque handoff/event/review IDs and revision, mathdb-v1, UTC time, approved pilot record and activation evidence. Maintainers independently authenticate the source.
+    validations:
+      required: true
+  - type: input
+    id: problem
+    attributes:
+      label: JSP and problem-bank entry
+      placeholder: JSP-XXXXXX and catalog URL
+    validations:
+      required: true
+  - type: input
+    id: mathdb_problem
+    attributes:
+      label: Confirmed MathDB problem ID and URL
+      description: Use the approved mapping and exact original-problem scope.
+      placeholder: MathDB ID and canonical https://mathdb.com/p/... URL
+    validations:
+      required: true
+  - type: textarea
+    id: actual_claimant
+    attributes:
+      label: Actual claimant and attribution
+      description: Public identifier, stable MathDB user ID/profile, optional GitHub account, actual contribution, coauthors and attribution evidence. An uploader or bot is not automatically the author. No private identity/email data.
+    validations:
+      required: true
+  - type: textarea
+    id: category_records
+    attributes:
+      label: Qualifying category records
+      description: Repeat for each passed Solution, Lean or Exposition category. Fixed material version/link, explicit final passed review, trusted record/revision and current validity, UTC decision time, complete scope and authors. Lean additionally needs the accepted mathematical solution, original repository/branch/full SHA, files/theorems, dependencies/build logs, correspondence/completeness and axiom audit. Exposition needs content review.
+    validations:
+      required: true
+  - type: textarea
+    id: qualification
+    attributes:
+      label: Date and priority or committee selection
+      description: Solution/Lean need original public time after 2026-01-01, corroborating history and earliest-valid-contributor evidence comparing related results including pre-cutoff work. Exposition needs the committee's first-satisfactory-contributor decision, selected version, UTC date and evidence. Uncertain checks cannot trigger formal automatic handoff.
+    validations:
+      required: true
+  - type: textarea
+    id: related_records
+    attributes:
+      label: Existing claims, historical PRs and disputes
+      description: Search open and closed history. Update the existing claim for this JSP/person; link coauthors, competition and disputes. State None only after checking. Preserve previous outcomes and versions.
+    validations:
+      required: true
+  - type: textarea
+    id: payment_conditions
+    attributes:
+      label: Official reward basis and pending payment conditions
+      description: Cite the formal announcement or state Pending team determination; no estimate or problem level. Category shares are Solution 50%, Lean 30%, Exposition 20%. Solution payment needs MathDB complete Lean verification or explicit external-record adoption with fixed version, complete scope and evidence, or mark pending. The team determines joint-author allocation.
+    validations:
+      required: true
+  - type: textarea
+    id: notification
+    attributes:
+      label: Notification and personal response status
+      description: Pending, sender acceptance with UTC time, or failure. Official MathDB notifications Cc and Reply-To thejustinsunprize@hejustinsun.com. Personal response and identity remain Pending until evidenced and verified by the team. Do not publish the recipient address.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Team handling: verify qualification/identity, publish each approved category with its own 14-day UTC notice, resolve objections and payment conditions, obtain personal written confirmation, and distinguish announcement from confirmed payment. Preserve personal replies and team decisions. API-created issues use the same evidence in the [Markdown template](https://github.com/TheJustinSunPrize/awards/blob/main/docs/templates/mathdb-claim-reward.md) and follow the [agent contract](https://github.com/TheJustinSunPrize/awards/blob/main/agent-scope.md).
