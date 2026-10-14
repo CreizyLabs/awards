@@ -22,14 +22,17 @@ See the [record guide](../docs/records.md) and optional [Markdown templates](../
 
 ## Award register
 
-The following contributions were moved from the candidate register on 2026-10-03
-at the maintainer's direction, treating their public-review periods as complete.
+Contributions with a public-review end of 2026-10-03 were moved from the candidate
+register on that date at the maintainer's direction. Neel Somani's mathematical
+solutions were moved on 2026-10-14 at the maintainer's direction.
 Review dates retain the date-only UTC precision of the original candidate records.
 Problem links provide the recorded contribution attribution and proof evidence.
 
 | Problem ID | Contribution type | Recipients | Public-review start (UTC) | Public-review end (UTC) |
 | --- | --- | --- | --- | --- |
+| [JSP-000239](../problems/catalog-0201-0300.md#JSP-000239) | Mathematical solution | Neel Somani | 2026-09-30 | 2026-10-14 |
 | [JSP-000305](../problems/catalog-0301-0400.md#JSP-000305) | Lean formalization | Wouter van Doorn | 2026-09-19 | 2026-10-03 |
+| [JSP-000327](../problems/catalog-0301-0400.md#JSP-000327) | Mathematical solution | Neel Somani | 2026-09-30 | 2026-10-14 |
 | [JSP-000371](../problems/catalog-0301-0400.md#JSP-000371) | Lean formalization | Wouter van Doorn | 2026-09-19 | 2026-10-03 |
 | [JSP-000381](../problems/catalog-0301-0400.md#JSP-000381) | Lean formalization | Wouter van Doorn | 2026-09-19 | 2026-10-03 |
 | [JSP-000526](../problems/catalog-0501-0600.md#JSP-000526) | Mathematical solution | Wouter van Doorn; Yanyang Li; Quanyu Tang | 2026-09-19 | 2026-10-03 |

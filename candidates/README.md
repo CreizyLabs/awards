@@ -33,10 +33,9 @@ identity confirmation; identity checks and written confirmation remain required.
 
 | Problem ID | Solver review start (UTC) | Mathematical solver | Lean review start (UTC) | Lean formalizer |
 | --- | --- | --- | --- | --- |
-| [JSP-000239](../problems/catalog-0201-0300.md#JSP-000239) | 2026-09-30 | Neel Somani | | |
-| [JSP-000327](../problems/catalog-0301-0400.md#JSP-000327) | 2026-09-30 | Neel Somani | | |
 
-Contributions whose public-review period ran from 2026-09-19 to 2026-10-03
+No active legacy candidates remain. Contributions whose public-review periods ran
+from 2026-09-19 to 2026-10-03 or from 2026-09-30 to 2026-10-14
 have moved to the [award register](../awards/README.md#award-register).
 
 When a role is awarded, replace its active candidate cell with a labeled link to
