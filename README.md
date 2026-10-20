@@ -25,7 +25,7 @@ Award entries are confirmed and publicly announced decisions; candidates are tra
 **We recommend the [new MathDB process](docs/award-process-mathdb.md) for the
 [49 pilot problems](problems/mathdb-pilot.md).** Submit Solution, Lean or Exposition
 materials through the confirmed MathDB link in the selected entry. After technical
-and reward-condition checks pass, the official agent creates or updates a claim
+and reward-condition checks pass, MathDB submits or updates the claim materials
 and notifies the contributor, copying the prize team. Contributors respond
 personally; no merged proof PR is required. Category public review, identity and
 payment conditions still apply. Activation and unresolved mappings are recorded
