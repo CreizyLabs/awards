@@ -6,6 +6,11 @@ The [participant process](docs/award-process-mathdb.md) defines qualification,
 public review, identity confirmation and payment. This is an integration contract,
 not a running agent or evidence that an account, event API or mail service is live.
 
+**Current submission route:** MathDB submits the web form and materials. The form
+records contribution roles without defining applicant or recipient identity.
+The agent-specific handoff sections below describe an optional automation design;
+an agent is not required to submit the current form.
+
 ## Authority and activation
 
 MathDB supplies accepted mathematical reviews, full Lean verification or explicit
@@ -129,6 +134,16 @@ establish their completeness, acceptance, priority or eligibility. API handoffs
 use a separate body and remain subject to this contract's full evidence checks.
 Issue Forms do not execute this contract or enforce eligibility. Keeping the web
 blank-issue setting disabled does not require using a contributor's credentials.
+
+The current form uses role checkboxes; existing dropdown-form issues remain
+supported. A new claim fails the role-availability check when its JSP/category is
+already in the candidate or award register, including retained legacy records.
+The authoritative issue URL
+in the event must match a register's claim link to allow updates to an existing
+registered role; citing that link in the submitted text does not bypass the check.
+Unpublished pending issues do not reserve roles. Correction and Formal dispute
+forms are handled separately and do not create a new claim or change a register.
+Register changes after a check still require the team to recheck availability.
 
 ## Notifications and recovery
 

@@ -18,14 +18,21 @@ SPEC.loader.exec_module(claim)
 
 
 class MathDBClaimTests(unittest.TestCase):
-    def body(self, selected=("Solution",), overrides=None):
+    def body(self, selected=("Solution",), overrides=None, legacy=False):
+        choices = (
+            ("Solution", "Solution — mathematical solution author"),
+            ("Lean", "Lean — Lean formalization author"),
+            ("Exposition", "Exposition — explanatory article, video or other material author"),
+        )
+        roles = "\n".join(f"- [{'x' if category in selected else ' '}] {label}"
+                          for category, label in choices)
         fields = {
             "JSP identifier": "JSP-000001",
             "Catalog link": "https://github.com/TheJustinSunPrize/awards/blob/main/"
                             "problems/catalog-0001-0100.md#JSP-000001",
             "MathDB problem link": "https://mathdb.com/p/315854/riemann-hypothesis",
             "Contributor": "Alice; MathDB user 123; solution author",
-            "Categories claimed": ", ".join(selected),
+            "Contribution roles": roles,
             "Solution material links": "_No response_",
             "Lean material links": "_No response_",
             "Exposition material links": "_No response_",
@@ -37,6 +44,9 @@ class MathDBClaimTests(unittest.TestCase):
                 fields[claim.CATEGORY_FIELDS[category]] = "https://example.org/material"
         if "Lean" in selected:
             fields["Lean material links"] = "Repository: https://github.com/alice/proof\nCommit: " + "a"*40
+        if legacy:
+            fields["Categories claimed"] = ", ".join(selected)
+            del fields["Contribution roles"]
         fields.update(overrides or {})
         return "\n\n".join(f"### {label}\n\n{value}" for label, value in fields.items())
 
@@ -82,7 +92,26 @@ class MathDBClaimTests(unittest.TestCase):
     def test_empty_unknown_and_repeated_categories_fail(self):
         for selected in ((), ("Both",), ("Solution", "Solution")):
             with self.subTest(selected=selected):
-                self.assertTrue(claim.validate_body(self.body(selected)))
+                self.assertTrue(claim.validate_body(self.body(selected, legacy=True)))
+
+    def test_unchecked_role_boxes_cannot_satisfy_selection(self):
+        self.assertIn("Select at least one contribution role.", claim.validate_body(self.body(())))
+
+    def test_unknown_and_duplicate_checkboxes_fail(self):
+        for roles in ("- [x] Other", "- [x] Solution — mathematical solution author\n"
+                      "- [X] Solution — mathematical solution author", "Solution"):
+            with self.subTest(roles=roles):
+                self.assertTrue(claim.validate_body(self.body(overrides={"Contribution roles": roles})))
+
+    def test_legacy_dropdown_claims_and_checkbox_claims_are_supported(self):
+        for legacy in (False, True):
+            with self.subTest(legacy=legacy):
+                self.assertEqual(claim.validate_body(self.body(tuple(claim.CATEGORY_FIELDS),
+                                 legacy=legacy)), [])
+
+    def test_two_role_sections_are_ambiguous(self):
+        self.assertIn("Use only one contribution-role section.", claim.validate_body(
+            self.body() + "\n\n### Categories claimed\n\nSolution"))
 
     def test_required_fields_cannot_be_removed_on_edit(self):
         for label in claim.REQUIRED_FIELDS:
@@ -124,6 +153,84 @@ class MathDBClaimTests(unittest.TestCase):
         event = {"issue": {"title": "Renamed issue", "body": self.body(overrides={
             "Solution material links": "_No response_"})}}
         self.assertTrue(claim.check_event(event))
+
+    def write_registers(self, root, occupied=None):
+        for location, heading, count in (("candidates", "MathDB pilot candidates", 10),
+                                          ("awards", "MathDB pilot awards", 9)):
+            directory = root / location
+            directory.mkdir(exist_ok=True)
+            content = f"### {heading}\n\n"
+            for record_location, jsp, category, issue_url in occupied or []:
+                if record_location == location:
+                    cells = [f"[{jsp}](../problems/catalog.md#{jsp})", category,
+                             "Public contributor", "mathdb", "https://mathdb.com/p/123",
+                             f"[Claim]({issue_url})"] + ["evidence"]*(count-6)
+                    content += "| " + " | ".join(cells) + " |\n"
+            (directory / "README.md").write_text(content)
+
+    def test_published_roles_reject_new_claims_but_not_other_roles_or_problems(self):
+        for location in ("candidates", "awards"):
+            with self.subTest(location=location), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                self.write_registers(root, [(location, "JSP-000001", "Solution",
+                                            "https://github.com/TheJustinSunPrize/awards/issues/123")])
+                event = {"issue": {"body": self.body()}}
+                self.assertTrue(any("Solution is already published" in error
+                                    for error in claim.check_event(event, root)))
+                event["issue"]["body"] = self.body(("Lean",))
+                self.assertEqual(claim.check_event(event, root), [])
+                event["issue"]["body"] = self.body(overrides={"JSP identifier": "JSP-000002"})
+                self.assertEqual(claim.check_event(event, root), [])
+
+    def test_registered_claim_can_be_updated_without_blocking_its_own_role(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            url = "https://github.com/TheJustinSunPrize/awards/issues/123"
+            self.write_registers(root, [("candidates", "JSP-000001", "Solution", url),
+                                       ("candidates", "JSP-000001", "Solution", url + "4")])
+            event = {"issue": {"body": self.body(), "html_url": url}}
+            self.assertEqual(claim.check_event(event, root), [])
+            # Mentioning the original claim in submitted text cannot bypass the check.
+            event["issue"] = {"body": self.body(overrides={
+                "Related claims or disputes (if any)": url}), "html_url": url + "5"}
+            self.assertTrue(claim.check_event(event, root))
+
+    def test_legacy_public_records_also_reserve_roles(self):
+        for location, cells in (("candidates", ["2026-10-01", "Author", "", ""]),
+                                ("awards", ["Mathematical solution", "Author", "start", "end"])):
+            with self.subTest(location=location), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                self.write_registers(root)
+                path = root / location / "README.md"
+                row = "| " + " | ".join(["[JSP-000001](../problems/catalog.md#JSP-000001)"]
+                                         + cells) + " |\n\n"
+                path.write_text(row + path.read_text())
+                event = {"issue": {"body": self.body()}}
+                self.assertTrue(any("Solution is already published" in error
+                                    for error in claim.check_event(event, root)))
+                event["issue"]["body"] = self.body(("Lean",))
+                self.assertEqual(claim.check_event(event, root), [])
+
+    def test_missing_or_invalid_registers_fail_closed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            event = {"issue": {"body": self.body()}}
+            self.assertTrue(any("Cannot check role availability" in error
+                                for error in claim.check_event(event, root)))
+            self.write_registers(root)
+            (root / "awards/README.md").write_text("### MathDB pilot awards\n\n| invalid | row |\n")
+            self.assertTrue(any("Cannot check role availability" in error
+                                for error in claim.check_event(event, root)))
+
+    def test_correction_and_dispute_templates_do_not_reserve_or_claim_roles(self):
+        for title, headings in (("[Correction] JSP-000001", ("Record or document",
+                                 "Current text and proposed correction")),
+                                ("[Dispute] JSP-000001", ("Disputed claim",
+                                 "Evidence and requested resolution"))):
+            with self.subTest(title=title):
+                body = self.body() + "\n\n" + "\n\n".join(
+                    f"### {label}\n\nExisting record" for label in headings)
+                self.assertIsNone(claim.check_event({"issue": {"title": title, "body": body}}))
 
     def test_legacy_api_and_unrelated_bodies_are_outside_web_form_scope(self):
         api_body = (ROOT / "docs/templates/mathdb-claim-reward.md").read_text()

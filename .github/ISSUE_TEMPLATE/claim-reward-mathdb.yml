@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        For the [MathDB pilot](https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.md), use [mathdb](https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md). The official agent submits after activation and qualification checks; the contributor remains the claimant.
+        MathDB submits the materials for a [MathDB pilot problem](https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.md). In the title, `categories` lists the contribution roles selected below, for example `Solution, Lean`.
 
   - type: input
     id: problem
@@ -37,16 +37,15 @@ body:
       description: Public name, stable MathDB user ID/profile and contribution. Include coauthors and attribution links if applicable; GitHub account is optional.
     validations:
       required: true
-  - type: dropdown
+  - type: checkboxes
     id: categories
     attributes:
-      label: Categories claimed
-      description: Select only categories that passed the required reviews and qualification checks. Each selected category must have material links below; leave unselected categories blank. An automatic check runs after submission and edits.
-      multiple: true
+      label: Contribution roles
+      description: Select one or more roles for the contributor whose materials passed the required reviews and qualification checks. Provide material links for every selected role; leave other material fields blank. Roles already published in candidates or awards are checked after submission; use Correction or Formal dispute to challenge an existing record.
       options:
-        - Solution
-        - Lean
-        - Exposition
+        - label: Solution — mathematical solution author
+        - label: Lean — Lean formalization author
+        - label: Exposition — explanatory article, video or other material author
     validations:
       required: true
   - type: textarea

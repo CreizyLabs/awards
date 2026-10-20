@@ -108,36 +108,48 @@ committee decision for Exposition. Missing or uncertain evidence pauses only the
 affected category. No formal automatic claim or successful-claim notification is
 sent for that category until these checks pass.
 
-## 3. Agent claim and personal confirmation
+<a id="3-agent-claim-and-personal-confirmation"></a>
 
-The official MathDB agent creates or updates a **Claim Reward** issue after the
-category's technical and reward-condition checks pass. The agent hands off
-materials; the actual contributor remains the claimant and potential recipient.
-A GitHub account is optional for initial handoff: a stable public MathDB identity
-can identify the claimant.
+## 3. MathDB submission and personal confirmation
 
-Use one issue per **JSP + actual claimant**, adding later qualifying categories to
-the same issue. Search open and closed claims, historical PRs, candidates, awards
-and disputes. Keep coauthors' and competing claims linked. Preserve applicant
-statements and team decisions; append updates without overwriting them.
+MathDB submits or updates a **Claim Reward** issue after the category's technical
+and reward-condition checks pass, using the
+[MathDB form](../.github/ISSUE_TEMPLATE/claim-reward-mathdb.yml). Record the public
+contributors, their roles and the material versions. Submission, contribution
+attribution and recipient confirmation are reviewed separately by the prize team.
 
-After creating or updating the issue, the agent sends a notification from MathDB's
+In the title, `categories` lists the selected contribution roles, for example
+`Solution, Lean`. The form's checkboxes mean mathematical solution author,
+Lean formalization author and exposition author; any combination is allowed.
+Every selected role needs its corresponding materials. A role already published
+for this JSP in the candidate or award register cannot be added through a new
+claim; updates to its registered claim remain allowed. Use the
+[Correction](../.github/ISSUE_TEMPLATE/correction.yml) or
+[Formal dispute](../.github/ISSUE_TEMPLATE/dispute.yml) form to challenge an existing
+record. The static GitHub form cannot disable options for individual problems;
+the post-submission check reports conflicts against the current registers.
+
+MathDB should update the existing issue for the same problem and contribution
+record when adding later qualifying roles. Search open and closed claims,
+historical PRs, candidates, awards and disputes, and keep related records linked.
+Preserve personal statements and team decisions; append updates without
+overwriting them.
+
+After creating or updating the issue, MathDB sends a notification from its
 official mailbox to the contributor, with Cc and Reply-To set to
 **thejustinsunprize@hejustinsun.com**. It includes the issue, passed categories,
 versions, verification and qualification evidence, and required personal response.
 Issue creation and notification are separate recoverable tasks: a mail failure
 must not create another issue or be described as delivery.
 
-The claimant personally replies to the prize mailbox, links the issue, confirms
-their contribution and intention to claim, discloses collaborators and supplies
-an independently verifiable identity method. After the team determines the
-proposed categories, reward and public attribution, the claimant confirms those
-terms again in writing. The agent cannot sign either response or receive payment.
+The prize team requests personal confirmation and private identity evidence from
+the intended recipients, with the issue and relevant contribution records linked.
+After determining the proposed categories, reward and public attribution, the
+team obtains the intended recipients' written confirmation of those terms.
 
 The team independently reviews qualification, priority, attribution, duplicates,
 the committee decision and applicable reward. An issue or email does not approve
-an award. See the [agent contract](../agent-scope.md) and
-[issue template](templates/mathdb-claim-reward.md).
+an award. Use the [MathDB claim form](../.github/ISSUE_TEMPLATE/claim-reward-mathdb.yml).
 
 ## 4. Public review for each category
 
