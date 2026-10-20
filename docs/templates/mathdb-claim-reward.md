@@ -9,10 +9,10 @@ claimant. Keep personal replies and team decisions outside agent-owned updates.
 Title: `[Claim Reward] JSP-XXXXXX — <qualifying categories>`
 
 The [web form](../../.github/ISSUE_TEMPLATE/claim-reward-mathdb.yml) collects
-problem, contributor, category material and shared review-record links. This API
-template also records the agent's handoff and review evidence. Link existing records instead of copying
-their contents; a shared record may cover multiple items or categories if its
-coverage is explicit.
+problem, contributor, category material and optional shared review-record links.
+This API template also records the agent's handoff and review evidence. Link
+existing records instead of copying their contents; a shared record may cover
+multiple items or categories if its coverage is explicit.
 
 ## Handoff and actual claimant
 

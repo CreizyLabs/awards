@@ -62,10 +62,10 @@ body:
     id: lean_records
     attributes:
       label: Lean material links
-      description: If claiming Lean, provide links to the original proof repository and relevant proof files at a fixed commit.
+      description: If claiming Lean, provide the original proof repository URL and the full commit SHA for the version being claimed.
       placeholder: |
-        https://github.com/OWNER/REPOSITORY
-        https://github.com/OWNER/REPOSITORY/blob/COMMIT/path/to/Proof.lean
+        Repository: https://github.com/OWNER/REPOSITORY
+        Commit: full commit SHA
     validations:
       required: false
   - type: textarea
@@ -81,10 +81,10 @@ body:
     id: review_records
     attributes:
       label: Review record links
-      description: Link the MathDB review records covering all selected categories, including committee selection for Exposition. Link each shared record only once; detailed evidence can remain in those records.
+      description: Optional. Link separate MathDB review records if the results are not available from the problem or material links. Include committee selection for Exposition when applicable.
       placeholder: https://... (review record)
     validations:
-      required: true
+      required: false
   - type: textarea
     id: related_records
     attributes:

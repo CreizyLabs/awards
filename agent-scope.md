@@ -116,9 +116,13 @@ issues use the Markdown template to include handoff and review evidence.
 Reference existing records rather than duplicating their contents, and reuse a
 shared record where it explicitly covers multiple categories.
 
-The web form collects review-record links once, with category materials in
-separate fields. The claim-completeness workflow checks submissions and edits
-for required fields, selected-category material links and material filled under
+The web form collects optional review-record links once, with category materials
+in separate fields. Leave review-record links blank when the results are already
+accessible through the problem or material links.
+For Lean, provide the original repository URL and full commit SHA; proof locations
+and audit details can remain in the linked review records.
+The claim-completeness workflow checks submissions and edits for required fields,
+selected-category material links and material filled under
 unselected categories. Failures appear in the Actions run and its summary;
 they do not prevent issue creation. The check does not fetch linked records or
 establish their completeness, acceptance, priority or eligibility. API handoffs
