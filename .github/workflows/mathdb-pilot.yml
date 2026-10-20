@@ -7,16 +7,22 @@ on:
       - 'candidates/README.md'
       - 'awards/README.md'
       - 'scripts/mathdb_pilot.py'
+      - 'scripts/check_mathdb_claim.py'
       - 'tests/**'
       - '.github/workflows/mathdb-pilot.yml'
+      - '.github/workflows/mathdb-claim.yml'
+      - '.github/ISSUE_TEMPLATE/claim-reward-mathdb.yml'
   pull_request:
     paths:
       - 'problems/**'
       - 'candidates/README.md'
       - 'awards/README.md'
       - 'scripts/mathdb_pilot.py'
+      - 'scripts/check_mathdb_claim.py'
       - 'tests/**'
       - '.github/workflows/mathdb-pilot.yml'
+      - '.github/workflows/mathdb-claim.yml'
+      - '.github/ISSUE_TEMPLATE/claim-reward-mathdb.yml'
   workflow_dispatch:
 
 permissions:

@@ -5,7 +5,7 @@
 This catalog contains **1,072 mathematical problems**.
 
 **New MathDB cooperation pilot:** [49 selected problems](mathdb-pilot.md) use
-[mathdb-v1](../docs/award-process-mathdb.md), including 28 newly added entries.
+[mathdb](../docs/award-process-mathdb.md), including 28 newly added entries.
 We recommend that process for participating problems and will expand it gradually.
 Each pilot entry records its workflow and either a confirmed/provisional MathDB
 link or a missing matching page. Unresolved mappings or page statements cannot

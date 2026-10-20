@@ -1,6 +1,6 @@
 # MathDB agent: claim handoff and notification contract
 
-Rules version: **mathdb-v1**. Applies only to the approved
+Rules version: **mathdb**. Applies only to the approved
 [49-problem pilot](problems/mathdb-pilot.md).
 The [participant process](docs/award-process-mathdb.md) defines qualification,
 public review, identity confirmation and payment. This is an integration contract,
@@ -108,8 +108,21 @@ unclear. Retain failed/pending checks internally; no empty formal claim or
    declarations or interpret notification as the applicant's consent or response.
 
 The legacy form remains for legacy applications. The
-[MathDB form](.github/ISSUE_TEMPLATE/claim-reward-mathdb.yml) documents handoff fields;
-API-created issues must include the same evidence using the Markdown template.
+[MathDB form](.github/ISSUE_TEMPLATE/claim-reward-mathdb.yml) collects problem,
+contributor and category material links. The agent or team must also retain
+linked, team-checkable records of the required reviews and qualification checks;
+material links alone do not establish acceptance or eligibility. API-created
+issues use the Markdown template to include handoff and review evidence.
+Reference existing records rather than duplicating their contents, and reuse a
+shared record where it explicitly covers multiple categories.
+
+The web form collects review-record links once, with category materials in
+separate fields. The claim-completeness workflow checks submissions and edits
+for required fields, selected-category material links and material filled under
+unselected categories. Failures appear in the Actions run and its summary;
+they do not prevent issue creation. The check does not fetch linked records or
+establish their completeness, acceptance, priority or eligibility. API handoffs
+use a separate body and remain subject to this contract's full evidence checks.
 Issue Forms do not execute this contract or enforce eligibility. Keeping the web
 blank-issue setting disabled does not require using a contributor's credentials.
 

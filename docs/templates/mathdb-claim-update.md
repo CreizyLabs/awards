@@ -5,7 +5,7 @@ claimant replies, team decisions, old versions and public-review history.
 
 - Existing claim: <URL>
 - Public handoff ID, event/review ID and revision: <IDs>
-- Rules version: mathdb-v1
+- Rules version: mathdb
 - JSP, MathDB problem and stable actual claimant: <IDs and public profile>
 - Update time (UTC): <timestamp>
 - Update type: <new qualifying category / evidence supplement / material change / conclusion withdrawal / team-status synchronization>

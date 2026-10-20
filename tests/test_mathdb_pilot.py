@@ -29,7 +29,7 @@ class PilotTests(unittest.TestCase):
     def register_row(self, root, location, category, jsp="JSP-000001", claimant="Test contributor"):
         count = 10 if location == "candidates" else 9
         values = [f"[{jsp}](../problems/catalog-0001-0100.md#{jsp})",
-                  category, claimant, "mathdb-v1"] + ["test evidence"]*(count-4)
+                  category, claimant, "mathdb"] + ["test evidence"]*(count-4)
         row = "| " + " | ".join(values) + " |\n"
         separator = "| " + " | ".join(["---"]*count) + " |\n"
         path = root / location / "README.md"

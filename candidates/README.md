@@ -52,7 +52,7 @@ out of this public register.
 ### MathDB pilot candidates
 
 Administrators add one row per accepted category and actual claimant. Use
-`mathdb-v1`, the stable claimant's public identifier, confirmed MathDB problem,
+`mathdb`, the stable claimant's public identifier, confirmed MathDB problem,
 claim issue, fixed material and technical/committee evidence, and explicit UTC
 start/end 14 full days apart. Category shares and formal reward decisions are
 explained in the claim; this register contains no levels or estimates. Track

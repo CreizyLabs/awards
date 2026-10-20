@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Pilot problems](../problems/mathdb-pilot.md) · [Legacy process](award-process.md)
 
-Rules version: **mathdb-v1**. This is the new process for the 49 problems in the
+Rules version: **mathdb**. This is the new process for the 49 problems in the
 [pilot register](../problems/mathdb-pilot.md). Other problems continue under the
 legacy process until their migration is announced. We recommend the new process
 for participating problems and intend to extend it to the remaining problem bank.

@@ -1,12 +1,18 @@
 # MathDB agent Claim Reward body
 
-Use with [mathdb-v1](../award-process-mathdb.md) and the
+Use with [mathdb](../award-process-mathdb.md) and the
 [agent contract](../../agent-scope.md). Replace placeholders with reviewed public
 facts. Repeat the category section for each category that independently passes
 both technical and reward-condition checks. The submitting agent is not the
 claimant. Keep personal replies and team decisions outside agent-owned updates.
 
-Title: `[Claim Reward] JSP-XXXXXX — <qualifying categories> — <public claimant>`
+Title: `[Claim Reward] JSP-XXXXXX — <qualifying categories>`
+
+The [web form](../../.github/ISSUE_TEMPLATE/claim-reward-mathdb.yml) collects
+problem, contributor, category material and shared review-record links. This API
+template also records the agent's handoff and review evidence. Link existing records instead of copying
+their contents; a shared record may cover multiple items or categories if its
+coverage is explicit.
 
 ## Handoff and actual claimant
 
@@ -14,7 +20,7 @@ This claim was handed off by the configured official MathDB agent.
 
 - Authenticated agent account/App identity: <public identity>
 - Opaque public handoff ID and review/event revision: <IDs>
-- Rules version: mathdb-v1
+- Rules version: mathdb
 - Created/updated at (UTC): <timestamp>
 - Actual claimant and stable MathDB user ID: <public attribution and ID>
 - Public MathDB profile: <URL>
