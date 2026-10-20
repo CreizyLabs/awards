@@ -19,7 +19,7 @@ CATEGORY_FIELDS = {
 }
 REQUIRED_FIELDS = (
     "JSP identifier", "Catalog link", "MathDB problem link", "Contributor",
-    "Categories claimed", "Review record links",
+    "Categories claimed",
 )
 WEB_MARKERS = ("JSP identifier", "MathDB problem link", "Categories claimed",
                *CATEGORY_FIELDS.values(), "Review record links")
@@ -57,7 +57,7 @@ def has_link(value):
 def validate_body(body):
     fields = sections(body)
     errors = []
-    known_fields = (*REQUIRED_FIELDS, *CATEGORY_FIELDS.values(),
+    known_fields = (*REQUIRED_FIELDS, *CATEGORY_FIELDS.values(), "Review record links",
                     "Related claims or disputes (if any)")
     for label in known_fields:
         if len(fields.get(label, [])) > 1:
@@ -90,6 +90,8 @@ def validate_body(body):
         if category in selected:
             if empty(material) or not has_link(material):
                 errors.append(f"{category} is selected: provide a material link in {label}.")
+            if category == "Lean" and not re.search(r"\b[0-9a-fA-F]{40}\b", material):
+                errors.append("Lean is selected: provide the full commit SHA.")
         elif not empty(material):
             errors.append(f"{label} has content: select {category} or clear this field.")
     return errors

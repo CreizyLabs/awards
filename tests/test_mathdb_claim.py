@@ -35,6 +35,8 @@ class MathDBClaimTests(unittest.TestCase):
         for category in selected:
             if category in claim.CATEGORY_FIELDS:
                 fields[claim.CATEGORY_FIELDS[category]] = "https://example.org/material"
+        if "Lean" in selected:
+            fields["Lean material links"] = "Repository: https://github.com/alice/proof\nCommit: " + "a"*40
         fields.update(overrides or {})
         return "\n\n".join(f"### {label}\n\n{value}" for label, value in fields.items())
 
@@ -57,6 +59,26 @@ class MathDBClaimTests(unittest.TestCase):
             "Lean material links": "https://github.com/author/proof"}))
         self.assertTrue(any("select Lean or clear this field" in error for error in errors))
 
+    def test_lean_repository_and_full_commit_are_sufficient(self):
+        self.assertEqual(claim.validate_body(self.body(("Lean",))), [])
+
+    def test_lean_commit_cannot_be_omitted_or_abbreviated(self):
+        for commit in ("", "main", "a"*7, "a"*39, "a"*41, "g"*40):
+            with self.subTest(commit=commit):
+                body = self.body(("Lean",), {"Lean material links":
+                    "Repository: https://github.com/alice/proof\nCommit: " + commit})
+                self.assertIn("Lean is selected: provide the full commit SHA.",
+                              claim.validate_body(body))
+
+    def test_lean_commit_without_repository_does_not_pass(self):
+        body = self.body(("Lean",), {"Lean material links": "Commit: " + "a"*40})
+        self.assertTrue(any("provide a material link" in error for error in claim.validate_body(body)))
+
+    def test_pinned_lean_links_remain_accepted(self):
+        body = self.body(("Lean",), {"Lean material links":
+            "https://github.com/alice/proof/blob/" + "a"*40 + "/Proof.lean"})
+        self.assertEqual(claim.validate_body(body), [])
+
     def test_empty_unknown_and_repeated_categories_fail(self):
         for selected in ((), ("Both",), ("Solution", "Solution")):
             with self.subTest(selected=selected):
@@ -67,8 +89,16 @@ class MathDBClaimTests(unittest.TestCase):
             with self.subTest(label=label):
                 body = self.body(overrides={label: ""})
                 self.assertIn(f"Missing required field: {label}.", claim.validate_body(body))
-        body = self.body().replace("### Review record links", "### Deleted review heading")
-        self.assertIn("Missing required field: Review record links.", claim.validate_body(body))
+        body = self.body().replace("### Contributor", "### Deleted contributor heading")
+        self.assertIn("Missing required field: Contributor.", claim.validate_body(body))
+
+    def test_review_can_be_blank_or_omitted(self):
+        for review in ("", "_No response_", "N/A"):
+            with self.subTest(review=review):
+                self.assertEqual(claim.validate_body(self.body(tuple(claim.CATEGORY_FIELDS),
+                                 {"Review record links": review})), [])
+        body = self.body().replace("### Review record links", "### Other information")
+        self.assertEqual(claim.validate_body(body), [])
 
     def test_review_requires_a_link_and_shared_review_only_needs_one(self):
         self.assertEqual(claim.validate_body(self.body(tuple(claim.CATEGORY_FIELDS))), [])
@@ -76,8 +106,10 @@ class MathDBClaimTests(unittest.TestCase):
         self.assertIn("Provide a valid HTTP(S) link in Review record links.", errors)
 
     def test_duplicate_sections_are_rejected(self):
-        body = self.body() + "\n\n### Solution material links\n\nhttps://example.org/other"
-        self.assertIn("Duplicate section: Solution material links.", claim.validate_body(body))
+        for label in ("Solution material links", "Review record links"):
+            with self.subTest(label=label):
+                body = self.body() + f"\n\n### {label}\n\nhttps://example.org/other"
+                self.assertIn(f"Duplicate section: {label}.", claim.validate_body(body))
 
     def test_crlf_and_empty_final_heading(self):
         self.assertEqual(claim.validate_body(self.body().replace("\n", "\r\n")), [])
