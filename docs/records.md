@@ -80,8 +80,9 @@ catalog workflow rows display that same mapping; do not maintain a separate manu
 list or add problem levels/reward estimates. Preserve existing JSP anchors and
 legacy records. The MathDB pilot additions extended the last volume through JSP-001050.
 The [2026-10-13 OpenAI source review](../problems/openai-source-review-2026-10-13.md)
-extends that volume through JSP-001072; its original filename is retained so
-existing external links keep working.
+extends that volume through JSP-001072. The mirror-symmetry scope update retains
+JSP-001024 for metric SYZ and adds JSP-001073 for Hodge-theoretic mirror symmetry.
+The volume's original filename is retained so existing external links keep working.
 
 Store public identifiers, catalog titles, mathematical scope and public evidence
 in the register. Keep names, original wording and line numbers of internal working
@@ -92,8 +93,8 @@ for an unresolved formulation or contradictory page statement; both block automa
 handoff. If no complete matching page is located, leave the mapping ID, URL, title
 and check date null and its evidence list empty. Keep any related page in the note
 as a reference, not as the approved mapping. Links display no status prefix;
-pending formulations and page-statement corrections remain in scope notes and
-catalog metadata. `Matching page pending` describes a missing full match,
+pending formulations and page-statement corrections remain in catalog metadata.
+`Matching page pending` describes a missing full match,
 independently of `Candidate` claim status.
 
 Public registration is derived separately for Solution, Lean and Exposition from

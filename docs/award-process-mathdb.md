@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Pilot problems](../problems/mathdb-pilot.md) · [Legacy process](award-process.md)
 
-Rules version: **mathdb**. This is the new process for the 49 problems in the
+Rules version: **mathdb**. This is the new process for the 50 problems in the
 [pilot register](../problems/mathdb-pilot.md). Other problems continue under the
 legacy process until their migration is announced. We recommend the new process
 for participating problems and intend to extend it to the remaining problem bank.
@@ -56,15 +56,18 @@ dimension, hypotheses and conclusion. Report a missing or incorrect mapping usin
 the [correction form](../.github/ISSUE_TEMPLATE/correction.yml); resolve it before
 automatic handoff.
 
-Links display no status prefix. The [scope notes](../problems/mathdb-pilot.md#scope-notes)
-and catalog metadata record unresolved formulations and page-statement issues;
+Links display no status prefix. Catalog metadata records unresolved formulations
+and page-statement issues;
 `Matching page pending` means a full corresponding page has not been located.
-These are independent of reward-candidate status. The notes also record related
+These are independent of reward-candidate status. The catalog notes also record related
 and alternative pages for review. They do not change the approved formulation by
-themselves. In particular, resolve the conflicting P=NP/P!=NP page statements
-before automatic handoff, and do not substitute a non-effective Vojta bound for
-the selected effective-Mordell problem. JSP-001050 links to the algorithmic form
-at [MathDB #332964](https://mathdb.com/p/332964/algorithmic-mordell-conjecture):
+themselves. JSP-000002 asks whether P equals NP; a complete proof of either
+equality or separation resolves that question. JSP-001024 (metric SYZ) and
+JSP-001073 (Hodge-theoretic mirror symmetry) are separate problems with separate
+qualification records. JSP-001041 selects the sphere restriction statement in
+dimensions n>=3 and its full exponent range. Do not substitute a non-effective
+Vojta bound for the selected effective-Mordell problem. JSP-001050 links to the
+algorithmic form at [MathDB #332964](https://mathdb.com/p/332964/algorithmic-mordell-conjecture):
 compute all points on any genus-at-least-two curve over a number field or finite
 extension. This supplies an effective height bound for each input but does not
 prescribe linear or polynomial uniform dependence; a stronger quantitative

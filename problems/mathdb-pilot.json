@@ -12,17 +12,17 @@
       "title": "P versus NP problem",
       "catalog": "problems/catalog-0001-0100.md",
       "workflow": "mathdb",
-      "scope": "If a proposed solution can be verified in polynomial time, can a solution also always be found in polynomial time?",
+      "scope": "Determine whether P equals NP. A complete proof of either equality or separation resolves the question for the standard polynomial-time decision-problem classes.",
       "mathdb": {
-        "status": "pending",
+        "status": "confirmed",
         "id": 315853,
         "url": "https://mathdb.com/p/315853/p-versus-np-problem",
         "title": "P versus NP problem",
-        "checked_at": "2026-10-13",
+        "checked_at": "2026-10-21",
         "evidence": [
           "https://mathdb.com/p/315853/p-versus-np-problem"
         ],
-        "note": "The linked page identifies P versus NP, but its main statement asserts P=NP and an alleged equivalent formulation asserts P!=NP. These are not equivalent. MathDB must correct the statement to the question whether P equals NP, and the team must confirm correspondence before the agent automatically judges a full solution or hands off a claim. An open-problem tag alone does not establish acceptance of both directions."
+        "note": "The corrected main statement asks whether P equals NP and explicitly accepts a complete proof of either equality or separation. Statement correspondence checked on 2026-10-21; this mapping is not proof acceptance or a reward decision."
       }
     },
     {
@@ -171,21 +171,38 @@
     },
     {
       "jsp": "JSP-001024",
+      "title": "Strominger–Yau–Zaslow Conjecture",
+      "catalog": "problems/catalog-1001-1022.md",
+      "workflow": "mathdb",
+      "scope": "For every polarized maximal degeneration of Calabi–Yau n-folds, n>=2, and every epsilon>0, prove that all sufficiently small nonzero fibres have an open subset of at least (1-epsilon) of the Ricci-flat volume admitting a smooth fibration by special Lagrangian n-tori of a common phase. This selects the metric SYZ statement; stronger collapsing and global-duality statements are not required by this entry.",
+      "mathdb": {
+        "status": "confirmed",
+        "id": 397030,
+        "url": "https://mathdb.com/p/397030/strominger-yau-zaslow-conjecture",
+        "title": "Strominger–Yau–Zaslow conjecture",
+        "checked_at": "2026-10-21",
+        "evidence": [
+          "https://mathdb.com/p/397030/strominger-yau-zaslow-conjecture"
+        ],
+        "note": "Following the mirror-symmetry split, this existing JSP retains MathDB #397030 and selects its metric SYZ statement. Hodge-theoretic mirror symmetry is a separate problem, [JSP-001073](catalog-1001-1022.md#JSP-001073). Statement correspondence checked on 2026-10-21; acceptance does not transfer between the two problems."
+      }
+    },
+    {
+      "jsp": "JSP-001073",
       "title": "Mirror symmetry conjecture",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
-      "scope": "Establish the mirror-symmetry correspondence between the complex/algebraic and symplectic structures of mirror spaces. Mirror symmetry has several formulations; the team and MathDB must confirm the intended formulation and full scope before qualification.",
+      "scope": "For mirror pairs in the Katzarkov–Kontsevich–Pantev framework, identify the A-model and B-model noncommutative Hodge structures, including Calabi–Yau and Landau–Ginzburg settings. In families, the mirror map must identify the connections, extensions across u=0, rational structures and Stokes filtrations; numerical Hodge-number equalities alone do not resolve this problem.",
       "mathdb": {
-        "status": "pending",
-        "id": 397030,
-        "url": "https://mathdb.com/p/397030/strominger-yau-zaslow-syz-mirror-symmetry-conjecture",
-        "title": "Strominger–Yau–Zaslow (SYZ) mirror symmetry conjecture",
-        "checked_at": "2026-10-13",
+        "status": "confirmed",
+        "id": 408863,
+        "url": "https://mathdb.com/p/408863/hodge-theoretic-mirror-symmetry-conjecture-katzarkov-kontsev",
+        "title": "Hodge-theoretic mirror symmetry conjecture (Katzarkov–Kontsevich–Pantev)",
+        "checked_at": "2026-10-21",
         "evidence": [
-          "https://mathdb.com/p/397030/strominger-yau-zaslow-syz-mirror-symmetry-conjecture",
-          "https://mathdb.com/p/374550/kontsevich-s-homological-mirror-symmetry-conjecture"
+          "https://mathdb.com/p/408863/hodge-theoretic-mirror-symmetry-conjecture-katzarkov-kontsev"
         ],
-        "note": "Mirror symmetry has several formulations. The current SYZ page is provisional. Alternative for review: [MathDB #374550 — Kontsevich homological mirror symmetry](https://mathdb.com/p/374550/kontsevich-s-homological-mirror-symmetry-conjecture), formulated as an equivalence of Fukaya and derived coherent-sheaf categories. SYZ and homological mirror symmetry are different formulations; the team and MathDB must confirm the intended version before replacing the approved mapping or qualifying a claim."
+        "note": "Added as a separate problem in the mirror-symmetry split. MathDB #408863 selects the KKP noncommutative-Hodge comparison, distinct from metric SYZ in [JSP-001024](catalog-1001-1022.md#JSP-001024) and from a homological-category equivalence. Statement correspondence checked on 2026-10-21; this mapping is not proof acceptance or a reward decision."
       }
     },
     {
@@ -645,18 +662,17 @@
       "title": "Fourier restriction conjecture",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
-      "scope": "Establish Fourier restriction or extension estimates in the conjectured optimal exponent range for the specified curved hypersurfaces. The surface class and dimension remain to be confirmed. Determine whether this record covers the sphere version in dimensions at least three or a more general curved-hypersurface problem before qualification.",
+      "scope": "Prove the full sphere extension estimate E: L^p(S^{n-1}) -> L^q(R^n) for every n>=3 and 1≤p,q≤infinity exactly when q>2n/(n-1) and q>=(n+1)p'/(n-1), where p' is the Hölder conjugate of p. The selected surface is the unit sphere; the known n=2 case or a smaller exponent range does not resolve this entry.",
       "mathdb": {
-        "status": "pending",
-        "id": 403776,
-        "url": "https://mathdb.com/p/403776/general-fourier-restriction-estimates-for-smooth-hypersurfac",
-        "title": "General Fourier restriction estimates for smooth hypersurfaces",
-        "checked_at": "2026-10-13",
+        "status": "confirmed",
+        "id": 403784,
+        "url": "https://mathdb.com/p/403784/fourier-restriction-conjecture-for-the-sphere-stein",
+        "title": "Fourier restriction conjecture for the sphere (Stein)",
+        "checked_at": "2026-10-21",
         "evidence": [
-          "https://mathdb.com/p/403776/general-fourier-restriction-estimates-for-smooth-hypersurfac",
-          "https://mathdb.com/p/403784/fourier-restriction-conjecture-for-the-sphere"
+          "https://mathdb.com/p/403784/fourier-restriction-conjecture-for-the-sphere-stein"
         ],
-        "note": "The current page asks for the full range of estimates on general smooth hypersurfaces and remains provisional. Alternative for review: [MathDB #403784 — Fourier restriction conjecture for the sphere](https://mathdb.com/p/403784/fourier-restriction-conjecture-for-the-sphere), which specifies the sphere, dimensions d>=3 and an exponent range. It is a concrete candidate, not an automatic replacement for the broader selected problem. Confirm the intended surface class, dimensions, curvature assumptions and full exponent range with the team and MathDB."
+        "note": "MathDB confirmed the sphere version as the selected problem, replacing the provisional general-hypersurface mapping. Statement correspondence checked on 2026-10-21 for all n>=3 and the full exponent range stated in the problem description; this mapping is not proof acceptance or a reward decision."
       }
     },
     {
