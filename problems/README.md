@@ -142,22 +142,22 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001073** in d
 | JSP-000004 | [Hodge conjecture](catalog-0001-0100.md#JSP-000004) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000005 | [Existence and smoothness of the 3D Navier–Stokes equations](catalog-0001-0100.md#JSP-000005) | Solved | Yes | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000006 | [Yang–Mills existence and mass gap](catalog-0001-0100.md#JSP-000006) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
-| JSP-000007 | [Poincaré conjecture](catalog-0001-0100.md#JSP-000007) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000007 | [Poincaré conjecture](catalog-0001-0100.md#JSP-000007) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000008 | [Goldbach conjecture (strong Goldbach)](catalog-0001-0100.md#JSP-000008) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000009 | [Twin prime conjecture](catalog-0001-0100.md#JSP-000009) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000010 | [abc conjecture](catalog-0001-0100.md#JSP-000010) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000011 | [Beal conjecture](catalog-0001-0100.md#JSP-000011) | Open | No | No | Unavailable | Unavailable |
 | JSP-000012 | [Legendre conjecture](catalog-0001-0100.md#JSP-000012) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
-| JSP-000013 | [Hadamard matrix conjecture](catalog-0001-0100.md#JSP-000013) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
+| JSP-000013 | [Hadamard matrix conjecture](catalog-0001-0100.md#JSP-000013) | Solved | Yes | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000014 | [Inverse Galois problem](catalog-0001-0100.md#JSP-000014) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000015 | [Kakeya dimension conjecture (general dimension)](catalog-0001-0100.md#JSP-000015) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000016 | [Littlewood conjecture](catalog-0001-0100.md#JSP-000016) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000017 | [Lonely runner conjecture](catalog-0001-0100.md#JSP-000017) | Open | No | No | Unavailable | Unavailable |
-| JSP-000018 | [Moving sofa problem (maximum area)](catalog-0001-0100.md#JSP-000018) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000018 | [Moving sofa problem (maximum area)](catalog-0001-0100.md#JSP-000018) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000019 | [Existence of odd perfect numbers](catalog-0001-0100.md#JSP-000019) | Open | No | No | Unavailable | Unavailable |
-| JSP-000020 | [Infinitude of Mersenne primes](catalog-0001-0100.md#JSP-000020) | Open | No | No | Unavailable | Unavailable |
+| JSP-000020 | [Infinitude of Mersenne primes](catalog-0001-0100.md#JSP-000020) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000021 | [Schanuel conjecture](catalog-0001-0100.md#JSP-000021) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
-| JSP-000022 | [Černý conjecture](catalog-0001-0100.md#JSP-000022) | Open | No | No | Unavailable | Unavailable |
+| JSP-000022 | [Černý conjecture](catalog-0001-0100.md#JSP-000022) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000023 | [Inscribed square problem (Toeplitz conjecture)](catalog-0001-0100.md#JSP-000023) | Open | No | No | Unavailable | Unavailable |
 | JSP-000024 | [Invariant subspace problem for Hilbert spaces](catalog-0001-0100.md#JSP-000024) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000025 | [Lehmer–Mahler measure problem](catalog-0001-0100.md#JSP-000025) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
@@ -288,7 +288,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001073** in d
 | JSP-000145 | [How dense can a set of real numbers be if distinct elements avoid prescribed neighborhoods of one another's integer multiples?](catalog-0101-0200.md#JSP-000145) | Open | No | No | Unavailable | Unavailable |
 | JSP-000146 | [Determine the average and growth of fixed powers of gaps between consecutive squarefree numbers.](catalog-0101-0200.md#JSP-000146) | Open | No | No | Unavailable | Unavailable |
 | JSP-000147 | [How many edges can a graph have while excluding a given bipartite graph of bounded degeneracy?](catalog-0101-0200.md#JSP-000147) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000148 | [How many representations of one are there as a sum of a prescribed number of distinct positive unit fractions?](catalog-0101-0200.md#JSP-000148) | Open | No | No | Unavailable | Unavailable |
+| JSP-000148 | [How many representations of one are there as a sum of a prescribed number of distinct positive unit fractions?](catalog-0101-0200.md#JSP-000148) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000149 | [How does the minimum number of colors needed to give nearby edges different colors depend on the maximum degree?](catalog-0101-0200.md#JSP-000149) | Open | No | No | Unavailable | Unavailable |
 | JSP-000150 | [What is the smallest vertex set meeting every maximal clique of a graph?](catalog-0101-0200.md#JSP-000150) | Open | No | No | Unavailable | Unavailable |
 | JSP-000151 | [For an integer set with distinct pairwise sums, how many elements of its sumset have neither neighboring integer in the sumset?](catalog-0101-0200.md#JSP-000151) | Solved | Yes | Yes | Unclaimed | Unclaimed |
@@ -562,7 +562,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001073** in d
 | JSP-000404 | [Blumenthal's problem](catalog-0401-0500.md#JSP-000404) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000405 | [How many distinct circles must a planar point set determine if its points are not all concyclic?](catalog-0401-0500.md#JSP-000405) | Open | No | No | Unavailable | Unavailable |
 | JSP-000406 | [Heilbronn's triangle problem](catalog-0401-0500.md#JSP-000406) | Open | No | No | Unavailable | Unavailable |
-| JSP-000407 | [What is the minimum number of colors needed to color the plane so that points at distance one have different colors?](catalog-0401-0500.md#JSP-000407) | Open | No | No | Unavailable | Unavailable |
+| JSP-000407 | [What is the minimum number of colors needed to color the plane so that points at distance one have different colors?](catalog-0401-0500.md#JSP-000407) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000408 | [How small can the total radii of disks covering the set where a polynomial has modulus at most one be?](catalog-0401-0500.md#JSP-000408) | Open | No | No | Unavailable | Unavailable |
 | JSP-000409 | [Chowla's cosine problem](catalog-0401-0500.md#JSP-000409) | Open | No | No | Unavailable | Unavailable |
 | JSP-000410 | [How many components of the region where a polynomial has modulus at most one can exceed a prescribed diameter?](catalog-0401-0500.md#JSP-000410) | Solved | No | No | Unavailable | Unavailable |
@@ -872,7 +872,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001073** in d
 | No. | Problem | Current status | Lean proof | Eligible to claim | Solver claim status | Lean claim status |
 | --- | --- | --- | --- | --- | --- | --- |
 | JSP-000701 | [How large can an integer-interval subset be if every pairwise product plus one has a nontrivial square factor?](catalog-0701-0800.md#JSP-000701) | Open | No | No | Unavailable | Unavailable |
-| JSP-000702 | [Singmaster's conjecture](catalog-0701-0800.md#JSP-000702) | Open | No | No | Unavailable | Unavailable |
+| JSP-000702 | [Singmaster's conjecture](catalog-0701-0800.md#JSP-000702) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000703 | [Matching prime-factor sets across shifted integer pairs](catalog-0701-0800.md#JSP-000703) | Open | No | No | Unavailable | Unavailable |
 | JSP-000704 | [Can a density-one set of integers be represented as a power of two plus a number with few prime factors?](catalog-0701-0800.md#JSP-000704) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000705 | [How long a run of pairwise distinct consecutive prime gaps can occur?](catalog-0701-0800.md#JSP-000705) | Open | No | No | Unavailable | Unavailable |
